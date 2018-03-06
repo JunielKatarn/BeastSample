@@ -1,0 +1,7 @@
+{
+	"name": "wsc-server",
+	"version": "1.0.0",
+	"dependencies": {
+		"ws": "^4.1.0"
+	}
+}

@@ -1,0 +1,7 @@
+.vs
+packages/
+WebSocketSample/node_modules/
+WebSocketSample/x64/
+x64/
+
+package-lock.json
