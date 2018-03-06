@@ -24,13 +24,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="package.json">
+    <None Include="..\Client.js">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="Server.js">
+    <None Include="..\package.json">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="Client.js">
+    <None Include="..\Server.js">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

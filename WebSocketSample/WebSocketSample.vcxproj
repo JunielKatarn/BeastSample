@@ -123,10 +123,10 @@
     <ClInclude Include="Client.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Client.js" />
-    <None Include="package.json" />
+    <None Include="..\Client.js" />
+    <None Include="..\package.json" />
+    <None Include="..\Server.js" />
     <None Include="packages.config" />
-    <None Include="Server.js" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

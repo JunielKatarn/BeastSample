@@ -1,6 +1,6 @@
 .vs
+node_modules/
 packages/
-WebSocketSample/node_modules/
 WebSocketSample/x64/
 x64/
 
