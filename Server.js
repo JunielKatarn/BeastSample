@@ -16,3 +16,7 @@ server.on('connection', (ws) => {
 	// This polutes the initial client read when using boost::beast!
 	ws.send('Connected! :D');
 });
+
+// server.on('error', (err) => {
+// 	console.error(err.message);
+// });

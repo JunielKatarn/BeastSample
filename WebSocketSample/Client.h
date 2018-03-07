@@ -14,9 +14,9 @@ class Client : public std::enable_shared_from_this<Client>
 
 public:
 	Client();
-	void Start(const std::string& host, const std::string& port);
-	//void Write(const std::string& text);
-	//void Close();
+	void Connect(const std::string& host, const std::string& port);
+	void Write(const std::string& text);
+	void Close();
 };
 
 }
