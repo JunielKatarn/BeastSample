@@ -41,6 +41,20 @@ void Client::Connect(const std::string& host, const std::string& port)
 					cout << "[FAIL]" << ec.message() << endl;
 					return;
 				}
+
+				pThis->m_stream.async_read(pThis->m_bufferIn, [pThis=pThis->shared_from_this()](bsec ec, size_t length)
+				{
+					if (ec)
+					{
+						cout << "[FAIL] Couldn't read." << endl;
+						return;
+					}
+					else
+					{
+						cout << "Found message to discard: " << buffers(pThis->m_bufferIn.data()) << endl;
+						pThis->m_bufferIn.consume(pThis->m_bufferIn.size());
+					}
+				});
 			});
 		});
 	});
